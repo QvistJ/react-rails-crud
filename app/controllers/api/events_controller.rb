@@ -22,7 +22,7 @@ class Api::EventsController < ApplicationController
   end
 
   def destroy
-    respond_to Event.destroy(params[:id])
+    respond_with Event.destroy(params[:id])
   end
 
   def update 
